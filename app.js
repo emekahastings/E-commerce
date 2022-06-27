@@ -147,12 +147,10 @@ cartname.addEventListener('click', function(){
 
   
   menus.addEventListener('click', function openslide(){
-    alert('hi')
     side.style.width= '200px'
    console.log('oya')
 })
   function close(event){
-      
       event.preventDefault()
       side.style.width= '0px'
   }
@@ -171,44 +169,6 @@ cartname.addEventListener('click', function(){
      } 
     })
 })
-
-// function empty(){
-
-//   if(cartinfo===""){
-//     console.log('empty')
-//   }
-// }
-// avatar.addEventListener('click', empty)
-
-
-// function create(event){
-//   event.preventDefault()
-//   let cartinfo= document.createElement('div')
-//   cartinfo.id='cartinfo'
-//   trolley.appendChild(cartinfo)
-
- 
-// let cartimage= document.createElement('img')
-// cartimage.src= 'image1-cart.jpg'
-// cartimage.id= 'cartimg'
-// cartimage.className='cartimg'
-// if(event.target.classList.contains('img1')){
-// trolley.appendChild(cartimage)
-// }
-
-//   let remove= document.createElement('img')
-//   remove.src= 'icon-delete.svg'
-//   remove.id= 'del'
-//   remove.className='del'
-//   cartinfo.appendChild(remove)
-
-//   let text= document.createElement('div')
-//   text.className='desc'
-//   text.appendChild(document.createTextNode('Best summer wears'))
-//   cartinfo.appendChild(text)
-// }
-// tocart.addEventListener('click', create )
- 
 
 
 

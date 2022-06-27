@@ -297,10 +297,10 @@ margin-left: 10px;
 }
 #product1{
     width: 80%;
-    height:65%;
+    height:75%;
    position: relative;
    right: 100px;
-   bottom: 30px;
+   bottom: 40px;
 }
   #icons{
       display: flex;
@@ -337,7 +337,7 @@ margin-left: 10px;
   }
   #details{
 position: absolute;
- top: 250px;
+ top: 230px;
 left: 10px;
 }
 
