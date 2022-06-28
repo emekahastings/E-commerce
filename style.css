@@ -28,7 +28,7 @@ ul>li {
     padding-left: 20px;
 }
 #lightbox{
-    position: fixed;
+    position: absolute;
     top: 0px;
     z-index: 1000;
     width: 100%;
@@ -37,11 +37,13 @@ ul>li {
     display: none;
 }
 #lightbox.active{
-    position: fixed;
+    position: absolute;
     display: flex;
-
-    justify-content: center;
-    align-items: center;
+  
+    width: 100%;
+    height: 100%;
+    /* justify-content: center;
+    align-items: center; */
 }
 .cart{
     position: relative;
@@ -59,6 +61,23 @@ left: 2.3in;
     }
 .cartimage{
     margin-left: 5px;
+}
+.red{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    right: 205px;
+    bottom: 5px;
+    
+}
+.digit{
+    color: white;
+    font-weight: 700;
+    position: relative;
+    bottom: 17px;
+    left: 2px;
 }
 .desc{
     font-size: 15px;
@@ -90,19 +109,19 @@ margin-right: 0px;
     margin-right: 10px;
     padding-top: 100px;
    position:absolute;
-  left: 700px;
+  left: 740px;
 }
 
  .sneaker{
     color: orangered;
-    font-size: 23px;
+    font-size: 25px;
 }
 .title{
-    font-size: 30px;
+    font-size: 33px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .text{
-    font-size: 18px;
+    font-size: 19px;
     color: rgb(159, 156, 156);
 }
 .img1, .img2, .img3, .img4{
@@ -158,15 +177,25 @@ margin-left: 10px;
 #trolley{
     /* display: flex; */
     width: 0in;
-    height: 2in;
+    height: 1.5in;
     position: relative;
     background-color: whitesmoke;
     float: right;
+    right: 170px;
     margin: auto;
     z-index: 1000;
     bottom: 10px;
+    
 }
-
+#closebtn{
+    width: 1%;
+    height: fit-content;
+    position: relative;
+    left: 100px;
+    top:40px;
+    /* bottom: 100px; */
+   color: white;
+}
 .cartname{
     font-size: 16px;
     font-weight: 100;
@@ -228,7 +257,6 @@ margin-left: 10px;
       display: none;
   }
   .menus{
-     height: 45%;
       display: flex;
       position: relative;
       right: 50px;
@@ -281,6 +309,9 @@ margin-left: 10px;
     position: relative;
     right: 335px;
   }
+  #avatar{
+    width: 30px;
+  }
   #headers{
       width: 100%;
       height: 0.4in;
@@ -297,7 +328,7 @@ margin-left: 10px;
 }
 #product1{
     width: 80%;
-    height:75%;
+    height:70%;
    position: relative;
    right: 100px;
    bottom: 40px;
@@ -346,17 +377,17 @@ left: 10px;
 
 }
 .sneaker{
-    font-size: 19px;
+    font-size: 22px;
     margin-left: 30px;
     width: 100%;
 }
 .title{
-    font-size: 20px;
+    font-size: 23px;
     margin-left: 30px;
     font-weight: 700;
 }
 .text{
-    font-size: 13px;
+    font-size: 15px;
     margin-left: 30px;
 }
 .same{

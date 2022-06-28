@@ -19,6 +19,8 @@ let tocart= document.querySelector('.tocart')
 let thumb= document.querySelectorAll('.block')
 let cartinfo= document.getElementById('cartinfo')
 let avatar= document.getElementById('avatar')
+let digit= document.querySelector(".digit")
+let ex = document.getElementById('closebtn')
 let current=0
 console.log(cartinfo)
 
@@ -113,24 +115,50 @@ image4.addEventListener('click', function(){
 let lightbox= document.createElement('div')
 lightbox.id='lightbox'
 document.body.appendChild(lightbox)
-console.log(lightbox)
+
 
 product1.addEventListener('click',function(){
   lightbox.classList.add('active')
-  next.classList.add('active')
+  image1.classList.add('active')
+  ex.classList.add('active')
+  ex.style.display='block'
+
  let img= document.createElement('img')
     img.src= product1.src
     img.style.width='400px'
+    img.style.height='fit-content'
+    img.style.position='relative'
+    img.style.left='500px'
+    img.style.top='70px'
+    img.style.borderRadius='5px'
+    // next.style.display='block'
+    // next.style.width='10%'
+    thumb.forEach(function(pic){
+      pic.style.width= '90px'
+      pic.style.top='475px'
+      pic.style.left='100px'
+    })
+    
+   ex.addEventListener('click', function(event){
     while(lightbox.firstChild){
       lightbox.removeChild(lightbox.firstChild)
     }
+    if(event.target!== event.currentTarget) return
+    lightbox.classList.remove('active')
+ 
+   })
+   
     lightbox.appendChild(img)
+    lightbox.appendChild(image1)
+    lightbox.appendChild(image2)
+    lightbox.appendChild(image3)
+    lightbox.appendChild(image4)
+    lightbox.append(ex)
+    
 })
 
-lightbox.addEventListener('click', function(event){
-  if(event.target!== event.currentTarget) return
-  lightbox.classList.remove('active')
-})
+
+
 
 
  cart=true
@@ -157,19 +185,18 @@ cartname.addEventListener('click', function(){
   x.addEventListener('click', close)
 
  
-  thumb.forEach(function(btn){
-    btn.addEventListener('click', function(event){
-     if(event.target.classList.contains('img1')){
-        console.log(';abii')
-  let cartimage= document.createElement('img')
-  cartimage.src= 'image1-cart.jpg'
-  cartimage.id= 'cartimg'
-  cartimage.className='cartimg'
-  cartinfo.appendChild(cartimage)
-     } 
-    })
-})
+tocart.addEventListener('click', function(){
 
+   
+
+
+
+  if(number.textContent <= 0){
+    alert('empty')
+  } else if(number.textContent > 0){
+      digit.innerHTML=number.textContent
+  }
+})
 
 
 
