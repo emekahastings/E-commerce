@@ -297,7 +297,7 @@ tocart.addEventListener('click', function(){
   if(number.textContent <= 0){
    
   } if(number.textContent > 0){
-      red.style.display='block'
+     red.style.display='block'
       digit.innerHTML=number.textContent
       empty.innerText=''
   } else if(number.textContent==0){
