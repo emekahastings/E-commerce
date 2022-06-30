@@ -281,7 +281,7 @@ cartname.addEventListener('click', function(){
 
   
   menus.addEventListener('click', function openslide(){
-    console.log('ok')
+   
     side.style.width= '200px'
    
 })

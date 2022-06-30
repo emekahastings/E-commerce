@@ -20,9 +20,6 @@ ul>li {
     margin-left: 40px;
     cursor: pointer;
 }
-.menus{
-    display: block;
-}
 .legit{
     padding: 5px;
     padding-left: 20px;
@@ -48,6 +45,7 @@ ul>li {
     right: 200px;
 }
 .avat{
+   
     position: relative;
     right: 200px;
 }
@@ -63,12 +61,13 @@ left: 2.3in;
 .red{
     width: 20px;
     height: 20px;
+   
     border-radius: 50%;
     background-color: red;
     position: relative;
     right: 205px;
-    bottom: 5px;
-    display: none;
+    bottom: 50px;
+    display: block;
     
 }
 .digit{
@@ -291,25 +290,45 @@ margin-left: 10px;
 }   
  
  
-@media screen and  (max-width:420px){
+@media screen and (max-width:420px){
     body{
-        margin: auto;
-        width: 100%;
+       margin: auto;
     }
-  .legit{
-      display: none;
-  }
-  .menus{
-      display: flex;
-      position: relative;
-      right: 50px;
-      cursor: pointer;
-  }
-  #side{
+
+.menus{
+    display: block;
+    position: relative;
+    bottom: 60px;
+    left: 10px;
+  
+}
+#logo{
+ margin-left: 50px;  
+}
+.legit{
+    display: none;
+}
+#headers{
+    position: relative;
+    right: 50px;
+    margin-top: 20px;
+}
+.cart{
+    position: relative;
+right: 260px;
+
+}
+.avatar{
+    width: 30px;
+    height: fit-content;
+    position: relative;
+    right: 70px;
+}
+#side{
+    display: block;
     height: 100%;
     position: fixed;
-    display: block;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     left: 0;
     font-size: 20px;
@@ -317,205 +336,53 @@ margin-left: 10px;
     overflow-x: hidden;
     padding-top: 60px;
     width: 0px;
-    background-color: rgb(76, 73, 73);  
+    background-color: rgb(76, 73, 73);
     transition: 0.7s;
 }
-.x{
-    font-size: 30px;
-    font-family: 700px;
-    position: relative;
-
-    float: right;
-    bottom: 50px;
-}
-#side a{
-    color: white;
-    list-style: none;
+.sidenav > a{
     text-decoration: none;
     padding: 10px 10px 10px 10px;
-    color: light rgb(188, 180, 180);
+   color: white;
     transition: 0.3s;
     display: block;
 }
+.x{
+    position: relative;
+    bottom: 40px;
+    left: 120px;
+}
 
-   #logo{
-     position: relative;
-     right: 70px;
-     
-  }
-  .cart{
-    position: relative;
-    width: 7%;
-    right: 220px;
-  }
-  .avat{
-    width: 30px;
-    height: fit-content;
-    position: relative;
-    right: 355px;
-  }
-  /* #avatar{
-    position: relative;
-    right: 200px;
-    width: 100%;
-height: fit-content;
-  } */
-  #headers{
-      width: 100%;
-      height: 0.4in;
-  }
-  #group{
-      display: none;
-  }
- 
-  #bigimages{
-    display: flex;
+
+
+
+#everything{
+    display: block;
+}
+.block{
+    display: none;
+}
+#cartinfo{
+    z-index: 1000;
 }
 .images{
-    display: flex;
+    position: fixed;
+    width: 150%;
+    right: -167px;
+    margin-left: 100px;
+    top:30px;
 }
-#product1{
-    width: 400px;
-    height: 370px;
-    position: absolute;
- 
-  margin-left:40px;
-    top: 30px;
-}
- 
- #icons{
-    display: block;
-    position: relative;
-    top: 340px;
-    left: 500px;
+ .red{
+    width: 900px;
+    height: 500px;
     z-index: 1000;
-    display: block;
-}
-.next{
-    position: relative;
-  left: -145px;
-    display: block;
-    bottom: 200px;
-}
-.previous{
-   position: relative;
-   right: 407px;
-   bottom: 175px;
-   display: block;
-}
-#circles{
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius:50% ;
-    position: relative;
-    top: 115px;
-    left: 80px;
-    z-index: 800;
-    display: block;
-}
-#circles2{
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius:50% ;
-    position: relative;
-    top: 70px;
-    left: 340px;
-    z-index: 800;
-    display: block;
-}
-
-  #details{
-position: absolute;
- top: 350px;
-left: 10px;
-}
-
-.sneaker{
-    font-size: 22px;
-    margin-left: 30px;
-    width: 100%;
-}
-.title{
-    font-size: 23px;
-    margin-left: 30px;
-    font-weight: 700;
-}
-.text{
-    font-size: 15px;
-    margin-left: 30px;
-}
-.same{
-    display: flex;
-    margin-left: 30px;
-}
-.discount{
-    position: relative;
-    bottom: 20px;
-}
-.discount, .price{
-    font-size: 20px;
-}
-.actual{
-    margin-left: 50px;
-    font-size: 20px;
-    position: relative;
-    bottom: 17px;
-}
-#flex-container{
-    display: block;
-    margin-left: 30px;
-} 
-.plus{
-    margin-left: 95px;
-}
-.minus{
-    margin-right: 40px;
-    position: relative;
-    bottom: 5px;
-    left: 30px;
-}
-.zero{
-    font-size: 17px;
-    text-align: center;
-    align-items: center;
-    padding-left: 90px;
-}
-.tocart{
-    background-color: orangered;
-    color: white;
-    padding: 12px;
-    border-radius: 5px;
-    flex: 1;
-    order: 2;
-     width: 100%;
-}
-.put{
-    margin-left: 70px;
-}
-
-.action{
-    background-color: rgb(242, 234, 234);
-    padding: 12px;
-    align-items: center;
-    border-radius: 5px;
-    width: 100%;
-    flex: 2;
-    order: 2;
-}
-.basket{
-    position: relative;
-    left: 50px;
-}
-.red{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+    border-radius: 100%;
     background-color: red;
-    position: relative;
+     position: relative;
+    right: 205px;
+    bottom: 5px;
+    display: block; 
     
-}
+} 
 .digit{
     color: white;
     font-weight: 700;
@@ -523,19 +390,71 @@ left: 10px;
     bottom: 17px;
     left: 2px;
 }
-#cartinfo{
-    width: 0in;
-    height: 1.5in;
+#details{
     position: relative;
-    background-color: blue;
-    float: right;
-    left: 120px;
-    margin: auto;
-    z-index: 1000; 
-    bottom: 10px; 
-} 
+    left: -45px;
+    top: 190px;
 }
+.sneaker{
+    font-size: 17px;
+}
+.title{
+    font-size:23px ;
+}
+.text{
+    font-size: 15px;
+}
+#flex-container{
+    display: block;
+    align-items: center;
+}
+.plus{
+    margin-left: 90px;
+}
+.minus{
+    margin-right: 90px;
+    position: relative;
+    bottom: 5px;
+    margin-left: 10px;
+}
+.zero{
+    font-size: 17px;
+    align-items: center;
+}
+.basket{
+   padding-left: 70px;
+    align-items: center;
+}
+.tocart{
+    background-color: orangered;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    flex: 2;
+   width: 85%;
+}
+.action{
+    background-color: rgb(242, 234, 234);
+    padding: 12px;
+    align-items: center;
+    border-radius: 5px;
+width: 85%;
+   flex: 2;
+}
+.previous{
+    position: relative;
+ z-index: 1000;
+    display: block;
+ }
+ #circles{
+     width: 40px;
+     height: 40px;
+     background-color: yellow;
+     border-radius:50% ;
+     position: relative;
+     
+     z-index: 800;
+     display: block;
+ }
 
-
-
-
+}
