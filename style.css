@@ -346,14 +346,14 @@ margin-left: 10px;
   .cart{
     position: relative;
     width: 7%;
-    right: 180px;
+    right: 220px;
   }
   .avat{
     position: relative;
     right: 355px;
   }
   #avatar{
-    width: 30px;
+    width: 30%;
 height: fit-content;
   }
   #headers{
@@ -376,7 +376,7 @@ height: fit-content;
     position: absolute;
  
   margin-left:40px;
-    top: 30px;
+    top: 70px;
 }
  
  #icons{
