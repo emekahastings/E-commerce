@@ -68,7 +68,7 @@ left: 2.3in;
     position: relative;
     right: 205px;
     bottom: 5px;
-    visibility: hidden;
+    display: none;
     
 }
 .digit{
@@ -375,7 +375,7 @@ margin-left: 10px;
     position: absolute;
  
   margin-left:40px;
-    bottom: 520px;
+    bottom: 270px;
 }
  
  #icons{
