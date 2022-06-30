@@ -22,11 +22,11 @@ let avatar= document.getElementById('avatar')
 let digit= document.querySelector(".digit")
 let ex = document.getElementById('closebtn')
 let empty= document.getElementById('empty')
-let red= document.getElementById('red')
+let red= document.querySelector('.red')
 // let circle1= document.getElementById('circles')
 // let circle2= document.getElementById('circle1')
 let current=0
-
+console.log(red)
 function reset(){
   for(i=0; i<slideimages.length;i++){
     slideimages[i].style.display='none'
