@@ -42,8 +42,6 @@ ul>li {
   
     width: 100%;
     height: 100%;
-    /* justify-content: center;
-    align-items: center; */
 }
 .cart{
     position: relative;
@@ -70,6 +68,7 @@ left: 2.3in;
     position: relative;
     right: 205px;
     bottom: 5px;
+    visibility: hidden;
     
 }
 .digit{
@@ -89,7 +88,7 @@ left: 2.3in;
     height: fit-content;
 
 }
-#car{
+.cart{
 padding-left: 300px;
 margin-right: 0px;
 }
@@ -147,6 +146,7 @@ margin-left: 10px;
 .nc, .pc{
     display: none;
 }
+
 .discount{
     font-size: 17px;
     color: orangered;
@@ -171,21 +171,17 @@ margin-left: 10px;
     display: flex;
     align-items: center;
 }
+
 #cartinfo{
-    display: flex;
-}
-#trolley{
-    /* display: flex; */
     width: 0in;
     height: 1.5in;
     position: relative;
     background-color: whitesmoke;
     float: right;
-    right: 170px;
+    right: 220px;
     margin: auto;
     z-index: 1000;
-    bottom: 10px;
-    
+    bottom: 10px; 
 }
 #closebtn{
     width: 1%;
@@ -238,8 +234,55 @@ margin-left: 10px;
 
 }
 #icons{
+    display: block;
+    position: relative;
+    top: 340px;
+    left: 500px;
+    z-index: 1000;
     display: none;
 }
+.next{
+    position: relative;
+    left: 60px;
+    display: none;
+}
+.previous{
+   position: relative;
+   right: 330px;
+   display: none;
+}
+#circles{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius:50% ;
+    position: relative;
+    top: 310px;
+    left: 560px;
+    z-index: 800;
+    display: none;
+}
+#empty{
+    font-size: 22px;
+    text-align: center;
+    padding-top: 50px;
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+}
+#circles2{
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+    border-radius:50% ;
+    position: relative;
+    top: 270px;
+    left: 160px;
+    z-index: 800;
+    display: none;
+}
+
 .legit:hover{
     border-bottom: 4px solid orangered;
 }
@@ -303,14 +346,14 @@ margin-left: 10px;
   #car{
     position: relative;
     width: 7%;
-    right: 160px;
+    right: 180px;
   }
   .avat{
     position: relative;
-    right: 335px;
+    right: 355px;
   }
   #avatar{
-    width: 30px;
+    width: 10px;
   }
   #headers{
       width: 100%;
@@ -327,55 +370,63 @@ margin-left: 10px;
     display: flex;
 }
 #product1{
-    width: 80%;
-    height:70%;
-   position: relative;
-   right: 100px;
-   bottom: 40px;
+    width: 400px;
+    height: 370px;
+    position: absolute;
+ 
+  margin-left:40px;
+    bottom: 520px;
 }
-  #icons{
-      display: flex;
-  }
-  #lightbox{
-    position: fixed;
-    top: 0px;
-    z-index: 1000;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 1, 0.8);
-    display: none;
-}
-#lightbox.active{
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  .next{
-      position: relative;
-      top: 130px;
-      left: 320px;
-      z-index: 1;
-  }
-  .previous{
-    position: relative;
-    top: 130px;
-    left: 60px;
-    z-index: 1;
-  } 
-   #circle{
+ 
+ #icons{
     display: block;
-  }
+    position: relative;
+    top: 340px;
+    left: 500px;
+    z-index: 1000;
+    display: block;
+}
+.next{
+    position: relative;
+  left: -145px;
+    display: block;
+    bottom: 200px;
+}
+.previous{
+   position: relative;
+   right: 407px;
+   bottom: 175px;
+   display: block;
+}
+#circles{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius:50% ;
+    position: relative;
+    top: 115px;
+    left: 80px;
+    z-index: 800;
+    display: block;
+}
+#circles2{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius:50% ;
+    position: relative;
+    top: 70px;
+    left: 340px;
+    z-index: 800;
+    display: block;
+}
+
   #details{
 position: absolute;
- top: 230px;
+ top: 350px;
 left: 10px;
 }
 
-  #part2{
-  position: relative;
-
-}
 .sneaker{
     font-size: 22px;
     margin-left: 30px;
@@ -452,8 +503,34 @@ left: 10px;
     position: relative;
     left: 50px;
 }
-
-
+.red{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    
+}
+.digit{
+    color: white;
+    font-weight: 700;
+    position: relative;
+    bottom: 17px;
+    left: 2px;
+}
+#cartinfo{
+    width: 0in;
+    height: 1.5in;
+    position: relative;
+    background-color: blue;
+    float: right;
+    left: 120px;
+    margin: auto;
+    z-index: 1000; 
+    bottom: 10px; 
 } 
+}
+
+
 
 
