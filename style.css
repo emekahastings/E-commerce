@@ -60,15 +60,14 @@ left: 2.3in;
     margin-left: 5px;
 }
 .red{
-    width: 20px;
-    height: 20px;
-   
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: red;
     position: relative;
     right: 205px;
     bottom: 50px;
-    display: block;
+  
     
 }
 .digit{
@@ -240,12 +239,12 @@ margin-left: 10px;
 .next{
     position: relative;
     left: 60px;
-    display: none;
+    display: block;
 }
 .previous{
    position: relative;
    right: 330px;
-   display: none;
+   display: block;
 }
 #circles{
     width: 40px;
@@ -316,8 +315,8 @@ right: 260px;
 
 }
 .avatar{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     position: absolute;
     right: 0px;
 }
@@ -348,10 +347,14 @@ right: 260px;
     bottom: 40px;
     left: 120px;
 }
-
-
-
-
+#icons{
+    display: block;
+    position: relative;
+    top: 340px;
+    left: 500px;
+    z-index: 1000;
+  
+}
 #everything{
     display: block;
 }
@@ -359,7 +362,15 @@ right: 260px;
     display: none;
 }
 #cartinfo{
-    z-index: 1000;
+    width: 0px;
+    height: 1.5in;
+    position: relative;
+    background-color: whitesmoke;
+   
+  left: 0px;
+    margin: auto;
+    z-index: 200;
+    bottom: 40px; 
 }
 .images{
     position: absolute;
@@ -370,20 +381,20 @@ right: 260px;
     top:8px;
 }
  .red{
-    width: 900px;
-    height: 500px;
-    z-index: 1000;
-    border-radius: 100%;
+    width: 30px;
+    height: 15px;
+    border-radius: 50%;
     background-color: red;
      position: relative;
-    right: 205px;
+    right: 265px;
     bottom: 5px;
     display: block; 
     
 } 
 .digit{
     color: white;
-    font-weight: 700;
+    font-size:15px;
+    font-weight: 300;
     position: relative;
     bottom: 17px;
     left: 2px;
@@ -407,20 +418,23 @@ right: 260px;
     align-items: center;
 }
 .plus{
-    margin-left: 90px;
+    margin-left: 120px;
+}
+.put{
+    margin-left: 20px;
 }
 .minus{
-    margin-right: 90px;
+    margin-right: 120px;
     position: relative;
     bottom: 5px;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 .zero{
     font-size: 17px;
     align-items: center;
 }
 .basket{
-   padding-left: 70px;
+   padding-left: 110px;
     align-items: center;
 }
 .tocart{
@@ -429,30 +443,65 @@ right: 260px;
     padding: 12px;
     border-radius: 5px;
     flex: 2;
-   width: 95%;
+   width: 105%;
 }
 .action{
     background-color: rgb(242, 234, 234);
     padding: 12px;
     align-items: center;
     border-radius: 5px;
-width: 95%;
+width: 105%;
    flex: 2;
+}
+#icons{
+    display: block;
+    position: relative;
+    top: 340px;
+    left: 500px;
+    z-index: 1000;;
 }
 .previous{
     position: relative;
- z-index: 1000;
+ z-index: 800;
     display: block;
+    bottom: 190px;
+    right: 430px;
  }
+ .next{
+    position: absolute;
+bottom: 190px;
+    left: -185px;
+   z-index: 800;
+}
  #circles{
      width: 40px;
      height: 40px;
-     background-color: yellow;
+     background-color: white;
      border-radius:50% ;
      position: relative;
-     
      z-index: 800;
      display: block;
+     left: 57px;
+     top: 120px;
  }
+ #circles2{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius:50% ;
+    position: relative;
+    top: 80px;
+    left: 300px;
+    z-index: 800;
+    display: block;
+}
+ .actual{
+    color: rgb(170, 163, 163);
+    text-decoration: line-through;
+    font-size: 21px;
+  position: relative;
+  bottom: 19px;
+  left: 170px;
+}
 
 }

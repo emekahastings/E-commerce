@@ -96,10 +96,7 @@ product1.addEventListener('click',function(){
 
 let circles= document.createElement('div')
 circles.id= 'circles'
-// circle1.style.width='90px'
-// circle1.style.height='90px'
-circles.style.backgroundColor='yellow'
-circles.style.left='200px'
+
 
 
 //Create product1 lightbox image
@@ -267,16 +264,17 @@ if(image4.classList.contains('img4')){
  cart=true
 cartname.addEventListener('click', function(){
  if(!cart){
-  cartinfo.style.width='2.6in'
+  cartinfo.style.width='100%'
   empty.style.display='block'
-  
+  alert('yes')
   cart=true
  } else if(cart===true){
   cartinfo.style.width='0in'
   empty.style.display='none'
   cart=false
+  alert('no')
  }
-
+alert('yes')
 })
 
   
