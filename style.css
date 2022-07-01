@@ -317,7 +317,7 @@ right: 260px;
 }
 .avatar{
     width: 25px;
-    height: fit-content;
+    height: 15px;
     position: relative;
     right: 280px;
 }
@@ -363,11 +363,11 @@ right: 260px;
 }
 .images{
     position: absolute;
-    width: 235%;
+    width: 255%;
     height: fit-content;
-    right: -427px;
+    right: -507px;
     margin-left: 100px;
-    top:20px;
+    top:15px;
 }
  .red{
     width: 900px;
@@ -391,7 +391,7 @@ right: 260px;
 #details{
     position: relative;
     left: -45px;
-    top: 230px;
+    top: 270px;
 }
 .sneaker{
     font-size: 17px;
