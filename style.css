@@ -44,8 +44,9 @@ ul>li {
     position: relative;
     right: 200px;
 }
-.avat{
-   
+.avatar{
+     width: 30px;
+     height: fit-content;
     position: relative;
     right: 200px;
 }
@@ -82,11 +83,7 @@ left: 2.3in;
     ;
 
 }
-#avatar{
-    width: 30px;
-    height: fit-content;
 
-}
 .cart{
 padding-left: 300px;
 margin-right: 0px;
@@ -319,8 +316,8 @@ right: 260px;
 
 }
 .avatar{
-    width: 30px;
-    height: fit-content;
+    width: 20px;
+    height: 10px;
     position: relative;
     right: 70px;
 }
@@ -365,9 +362,9 @@ right: 260px;
     z-index: 1000;
 }
 .images{
-    position: fixed;
-    width: 150%;
-    right: -167px;
+    position: absolute;
+    width: 220%;
+    right: -377px;
     margin-left: 100px;
     top:30px;
 }
@@ -393,7 +390,7 @@ right: 260px;
 #details{
     position: relative;
     left: -45px;
-    top: 190px;
+    top: 210px;
 }
 .sneaker{
     font-size: 17px;
