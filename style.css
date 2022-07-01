@@ -316,10 +316,10 @@ right: 260px;
 
 }
 .avatar{
-    width: 20px;
-    height: 10px;
+    width: 25px;
+    height: fit-content;
     position: relative;
-    right: 70px;
+    right: 280px;
 }
 #side{
     display: block;
@@ -363,10 +363,11 @@ right: 260px;
 }
 .images{
     position: absolute;
-    width: 220%;
-    right: -377px;
+    width: 235%;
+    height: fit-content;
+    right: -427px;
     margin-left: 100px;
-    top:30px;
+    top:20px;
 }
  .red{
     width: 900px;
@@ -390,7 +391,7 @@ right: 260px;
 #details{
     position: relative;
     left: -45px;
-    top: 210px;
+    top: 230px;
 }
 .sneaker{
     font-size: 17px;
@@ -428,14 +429,14 @@ right: 260px;
     padding: 12px;
     border-radius: 5px;
     flex: 2;
-   width: 85%;
+   width: 95%;
 }
 .action{
     background-color: rgb(242, 234, 234);
     padding: 12px;
     align-items: center;
     border-radius: 5px;
-width: 85%;
+width: 95%;
    flex: 2;
 }
 .previous{
