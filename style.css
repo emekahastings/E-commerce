@@ -574,7 +574,8 @@ bottom: 190px;
         right: 60px;
         margin: auto;
         z-index: 1000;
-        bottom: 100px; 
+        bottom: 0px;
+        top: 60px; 
     }
     .reds{
         width: 17px;
@@ -597,8 +598,8 @@ bottom: 190px;
         z-index: 1000;
     }
     #thumbimg{
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         margin-left: 10px;
     }
     #check{
