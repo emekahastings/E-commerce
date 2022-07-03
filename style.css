@@ -599,8 +599,8 @@ bottom: 190px;
         z-index: 1000;
     }
     #thumbimg{
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         margin-left: 10px;
     }
     #check{
@@ -860,11 +860,10 @@ bottom: 190px;
     .reds{
         width: 17px;
         height: 17px;
-      display: none;
+        display: none;
         background-color: orangered;
-         border-radius: 50%;
-         position: absolute;
-         
+        border-radius: 50%;
+        position: absolute;  
         left: 360px; 
         z-index: 100; 
     }
@@ -873,7 +872,7 @@ bottom: 190px;
         font-weight: 700;
         font-size: 15px;
         position: relative;
-      bottom: 13px;
+        bottom: 13px;
         left: 5px;
         z-index: 1000;
     }
@@ -893,11 +892,11 @@ bottom: 190px;
         right: 60px;
         margin: auto;
         z-index: 1000;
-        bottom: 600px; 
+        bottom: 500px; 
     }
     #thumbimg{
-        width: 20px;
-        height: fit-content;
+        width: 30px;
+        height: 30px;
         margin-left: 10px;
     }
     #check{
