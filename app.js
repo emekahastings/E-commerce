@@ -299,6 +299,11 @@ cartname.addEventListener('click', function(){
   }
   x.addEventListener('click', close)
 
+  function removed(){
+    inside.style.visibility="hidden"
+  empty.style.display='block'
+  }
+
  
 tocart.addEventListener('click', function(){
 
@@ -331,10 +336,7 @@ tocart.addEventListener('click', function(){
 })
 
 
-function removed(){
-  inside.style.visibility="hidden"
-empty.style.display='block'
-}
+
 
 
 
