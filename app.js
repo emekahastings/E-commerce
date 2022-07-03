@@ -20,13 +20,18 @@ let thumb= document.querySelectorAll('.block')
 let cartinfo= document.getElementById('cartinfo')
 let avatar= document.getElementById('avatar')
 let digit= document.querySelector(".digit")
+let digits= document.querySelector(".digits")
 let ex = document.getElementById('closebtn')
 let empty= document.getElementById('empty')
 let red= document.querySelector('.red')
+let reds= document.querySelector('.reds')
+let inside=document.getElementById('inside')
+let del= document.getElementById('delet')
+console.log(del)
 // let circle1= document.getElementById('circles')
 // let circle2= document.getElementById('circle1')
 let current=0
-console.log(red)
+
 function reset(){
   for(i=0; i<slideimages.length;i++){
     slideimages[i].style.display='none'
@@ -40,29 +45,36 @@ function reset(){
 
   function slideleft(){
     reset()
-  slideimages[current+1].style.display='block'
+  slideimages[current-1].style.display='block'
     current--
 }
 
 prev.addEventListener('click', function(){
-  if(slideimages===0){
+  if(current===0){
     current= slideimages.length
   } 
   slideleft()
 })
+
+
 function slideright(){
   reset()
   slideimages[current+1].style.display='block'
   current++
 }
 next.addEventListener('click', function(){
-  if(slideimages=== slideimages.length-1){
+  if(current=== slideimages.length-1){
     current=-1
   }
   slideright()
 })
 
+
+
+
 show()
+
+
 // Increase the number
 let count=0
 function Increase(){
@@ -88,16 +100,8 @@ let lightbox= document.createElement('div')
 lightbox.id='lightbox'
 document.body.appendChild(lightbox)
 
-
 product1.addEventListener('click',function(){
   lightbox.classList.add('active')
- 
-
-
-let circles= document.createElement('div')
-circles.id= 'circles'
-
-
 
 //Create product1 lightbox image
  let img= document.createElement('img')
@@ -150,19 +154,24 @@ t4.style.left='55px'
 t4.style.top='480px'
 t4.style.borderRadius='5px'
 
+//Create mext and prev icons
+let nxt= document.createElement('img')
+let prv= document.createElement('img')
+ nxt.className='next'
+ prv.className= 'previous'
 
-    next.src='icon-next.svg'
-    next.style.display='block'
-    next.style.width='20px'
-    next.style.height= 'fit-content'
-    next.style.top='230px'
-    next.style.left='0px'  
-    prev.src='icon-previous.svg'
-    prev.style.display='block'
-    prev.style.width='20px'
-    prev.style.height= 'fit-content'
-    prev.style.top='230px'
-    prev.style.right='370px'
+    nxt.src='icon-next.svg'
+    nxt.style.display='block'
+    nxt.style.width='20px'
+    nxt.style.height= 'fit-content'
+    nxt.style.top='230px'
+    nxt.style.left='0px'  
+    prv.src='icon-previous.svg'
+    prv.style.display='block'
+    prv.style.width='20px'
+    prv.style.height= 'fit-content'
+    prv.style.top='230px'
+    prv.style.right='370px'
    
    
     t2.addEventListener('click', function(){
@@ -220,10 +229,10 @@ t4.style.borderRadius='5px'
     lightbox.appendChild(t3)
     lightbox.appendChild(t4)
     lightbox.append(ex)
-    lightbox.appendChild(next)
-    lightbox.append(prev)
-    lightbox.appendChild(circles)
-    lightbox.appendChild(slideimages)
+    lightbox.appendChild(nxt)
+    lightbox.append(prv)
+   
+    
 })
 
 image2.addEventListener('click', function(){
@@ -264,23 +273,24 @@ if(image4.classList.contains('img4')){
  cart=true
 cartname.addEventListener('click', function(){
  if(!cart){
-  cartinfo.style.width='100%'
-  empty.style.display='block'
-  alert('yes')
+  cartinfo.style.width='3in'
+   empty.style.display='block'
+  inside.style.visibility='visible'
   cart=true
  } else if(cart===true){
   cartinfo.style.width='0in'
   empty.style.display='none'
+  inside.style.visibility='hidden'
   cart=false
-  alert('no')
+ 
  }
-alert('yes')
+
 })
 
   
   menus.addEventListener('click', function openslide(){
-   
-    side.style.width= '200px'
+    
+   side.style.width= '200px'
    
 })
   function close(event){
@@ -291,17 +301,42 @@ alert('yes')
 
  
 tocart.addEventListener('click', function(){
-  
-  if(number.textContent <= 0){
-   
-  } if(number.textContent > 0){
+
+    if(number.textContent > 0){
      red.style.display='block'
+     reds.style.display='block'
+     console.log(digit.innerHTML)
       digit.innerHTML=number.textContent
+      digits.innerHTML=number.textContent
       empty.innerText=''
+      inside.innerHTML= 
+        `     
+               <div class='cartel'> 
+               <b> Cart </b> <br> 
+      </div>
+  <div id='info'> 
+ <span><img src="image-product-1-thumbnail.jpg" id='thumbimg'> </span>
+ <span id='type'> Fall limited Edition sneakers 
+      125*${number.textContent} =${number.textContent*125}        
+ </span>
+  <span id='del'><img src="icon-delete.svg" id='delet' class='delete' onClick='removed()'> </span>
+     </div>
+
+     <div id='check'> <b class='out'> Check out </b> </div>
+`  
   } else if(number.textContent==0){
     alert('You cannot add zero items to the cart')
   }
+
 })
+
+
+function removed(){
+  inside.style.visibility="hidden"
+empty.style.display='block'
+}
+
+
 
 
 
