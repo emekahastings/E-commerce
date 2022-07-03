@@ -574,7 +574,7 @@ bottom: 190px;
         right: 60px;
         margin: auto;
         z-index: 1000;
-        bottom: -300px;
+       top: -600px;
         
     }
     .reds{
