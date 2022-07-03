@@ -565,18 +565,19 @@ bottom: 190px;
     padding-left: 300px;
     margin-right: 0px;
     }
-    /* #cartinfo{
+     #cartinfo{
         width: 0in;
         height:1.8in;
-        position: relative;
+        position: absolute;
         background-color: whitesmoke;
         float: right;
         right: 60px;
         margin: auto;
         z-index: 1000;
+        bottom: 679px;
         
         
-    } */
+    } 
     .reds{
         width: 17px;
         height: 17px;
