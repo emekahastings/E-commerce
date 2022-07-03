@@ -568,7 +568,7 @@ bottom: 190px;
     #cartinfo{
         width: 0in;
         height:1.8in;
-        position: absolute;
+        position: relative;
         background-color: whitesmoke;
         float: right;
         right: 60px;
