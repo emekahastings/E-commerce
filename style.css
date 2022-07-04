@@ -410,7 +410,7 @@ right: 290px;
 
 #product1{
     position: absolute;
-    width: 100%;
+    width: 105%;
     height: 350%;
   top:-83px;
   right: -40px;
@@ -420,7 +420,7 @@ right: 290px;
 
 #details{
     position: absolute;
-    top: 230px;
+    top: 250px;
      left: 10px;
     z-index: 400;
 }
@@ -524,7 +524,7 @@ bottom: 190px;
     font-size: 21px;
   position: relative;
   bottom: 19px;
-  left: 160px;
+  left: 150px;
 }
 #lightbox.active{
     position: absolute;
