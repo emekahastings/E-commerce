@@ -420,7 +420,7 @@ right: 290px;
 
 #details{
     position: absolute;
-    top: 250px;
+    top: 230px;
      left: 10px;
     z-index: 400;
 }
@@ -524,7 +524,7 @@ bottom: 190px;
     font-size: 21px;
   position: relative;
   bottom: 19px;
-  left: 170px;
+  left: 160px;
 }
 #lightbox.active{
     position: absolute;
