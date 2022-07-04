@@ -332,7 +332,7 @@ margin-left: 10px;
 .menus{
     display: none;
 }   
- @media screen and (max-width:430px){
+ @media screen and (max-width:500px){
     body{
        margin: auto;
     }
@@ -344,27 +344,24 @@ margin-left: 10px;
     left: 30px;
   
 }
-#logo{
- margin-left: 50px;  
-}
+
 .legit{
     display: none;
 }
 #headers{
-    position: relative;
-    right: 50px;
-    margin-top: 20px;
+    position: relative; 
+  
 }
 .cart{
     position: relative;
-right: 260px;
+right: 290px;
 
 }
 .avatar{
     width: 25px;
     height: 25px;
     position: relative;
-    right: 270px;
+    right: 300px;
 }
 #side{
     display: block;
@@ -393,14 +390,14 @@ right: 260px;
     bottom: 40px;
     left: 120px;
 }
-#icons{
+/* #icons{
     display: block;
     position: relative;
     top: 340px;
     left: 500px;
     z-index: 1000;
   
-}
+} */
 #everything{
     display: block;
 }
@@ -409,22 +406,19 @@ right: 260px;
 }
 
 #product1{
-    margin-top: 0px;
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 43%;
-    right: 100px;
-    margin-left: 100px;
-  top: -140px;
+    height: 350%;
+  top:-80px;
+  right: -40px;
     z-index: 400;
-
 }
 
 
 #details{
     position: absolute;
-    left: 10px;
-    top: 370px;
+    top: 270px;
+     left: 10px;
     z-index: 400;
 }
 .sneaker{
@@ -437,11 +431,13 @@ right: 260px;
     font-size: 15px;
 }
 #flex-container{
+    position: absolute;
     display: block;
     align-items: center;
 }
 .plus{
-    margin-left: 120px;
+ position: relative;
+ left: 120px;
 }
 .put{
     margin-left: 20px;
@@ -461,38 +457,39 @@ right: 260px;
     align-items: center;
 }
 .tocart{
+    position: relative;
     background-color: orangered;
     color: white;
     padding: 12px;
     border-radius: 5px;
     flex: 2;
-   width: 105%;
+   width: 140%;
 }
 .action{
     background-color: rgb(242, 234, 234);
     padding: 12px;
     align-items: center;
     border-radius: 5px;
-width: 105%;
+width: 140%;
    flex: 2;
 }
 #icons{
     display: block;
     position: relative;
     top: 340px;
-    left: 500px;
+    left: 450px;
     z-index: 1000;;
 }
 .previous{
     position: relative;
  z-index: 1000;
     display: block;
-    bottom: 190px;
-    right: 430px;
+    bottom: 230px;
+    right: 380px;
  }
  .next{
     position: absolute;
-bottom: 190px;
+bottom: 230px;
     left: -185px;
    z-index: 1000;
 }
@@ -505,7 +502,7 @@ bottom: 190px;
      z-index: 900;
      display: block;
      left: 57px;
-     top: 120px;
+     top: 80px;
  }
  #circles2{
     width: 40px;
@@ -513,8 +510,8 @@ bottom: 190px;
     background-color: white;
     border-radius:50% ;
     position: relative;
-    top: 80px;
-    left: 300px;
+    top: 40px;
+    left: 250px;
     z-index: 900;
     display: block;
 }
@@ -570,14 +567,13 @@ bottom: 190px;
         height:1.8in;
         position: absolute;
         background-color: whitesmoke;
-        float: right;
-        right: 60px;
-        margin: auto;
+        right: 50px;
         z-index: 1000;
-        bottom: 500px;
-        
-        
+       top:5px;
     } 
+    #total{
+        position: relative;
+    }
     .reds{
         width: 17px;
         height: 17px;
@@ -622,7 +618,7 @@ bottom: 190px;
 }
 
 
- @media screen and (max-width:390px){
+ /* @media screen and (max-width:390px){
     body{
        margin: auto;
     }
@@ -915,7 +911,7 @@ bottom: 190px;
     .out{
       padding-left: 70px;
     }
-}
+} */
   
 
  
