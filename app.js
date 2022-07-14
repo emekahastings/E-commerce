@@ -308,10 +308,10 @@ cartname.addEventListener('click', function(){
 tocart.addEventListener('click', function(){
 
     if(number.textContent > 0){
-     red.style.display='block'
      reds.style.display='block'
-     console.log(digit.innerHTML)
-      digit.innerHTML=number.textContent
+     reds.style.display='block'
+     console.log(digits.innerHTML)
+      digits.innerHTML=number.textContent
       digits.innerHTML=number.textContent
       empty.innerText=''
       inside.innerHTML= 
@@ -334,7 +334,7 @@ tocart.addEventListener('click', function(){
   }
 
 })
-
+ 
 
 
 

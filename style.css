@@ -1,15 +1,18 @@
+html{
+    font-size: 16px;
+}
 body{
     background-color: white;
     margin: auto; 
-    padding: 0px; 
+    padding: 0rem; 
     overflow-x: hidden;
 }
 #headers{
     background-color: white;
-    width: 100%;
-    height: 0.35in;
+    width: 100vw;
+    height: 6vh;
     position: relative;
-    bottom: 11px; 
+    bottom: 0.8rem; 
  border-bottom: 1px solid rgb(174, 172, 172);
 }
 ul{
@@ -17,21 +20,21 @@ ul{
 }
 ul>li {
     list-style: none;
-    font-size: 16px;
+    font-size: 1.2rem;
     text-align: center;
-    margin-left: 40px;
+    margin-left: 2.5rem;
     cursor: pointer;
 }
 .legit{
-    padding: 5px;
-    padding-left: 20px;
+    padding: 0.5rem;
+    padding-left: 1.25rem;
 }
 #lightbox{
     position: absolute;
-    top: 0px;
+    top: 0rem;
     z-index: 1000;
     width: 100%;
-    height: 100%;
+    height: 100vw;
     background-color: rgba(0, 0, 1, 0.8);
     display: none;
 }
@@ -39,18 +42,18 @@ ul>li {
     position: absolute;
     display: flex;
   
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
 }
 .cart{
     position: relative;
-    right: 200px;
+    right: 13rem;
 }
 .avatar{
-     width: 30px;
+     width: 2rem;
      height: fit-content;
     position: relative;
-    right: 200px;
+    right: 13rem;
 }
 .del{
 position: relative;
@@ -59,19 +62,19 @@ left: 2.3in;
      height: fit-content;
     }
 .cartimage{
-    margin-left: 5px;
+    margin-left: 0.4rem;
 }
-.red{
-    width: 17px;
-    height: 17px;
+/* .red{
+    width: 1rem;
+    height: 1rem;
   display: none;
     background-color: red;
-    border-radius: 50%;
-    position: relative;
-    bottom: 765px;
-    left: 940px;
+    border-radius: 50vw;
+    position: absolute;
+    top: 0rem;
+   
   
-}
+} */
 .digit{
     color: white;
     
@@ -83,19 +86,17 @@ left: 2.3in;
    
 }
 .desc{
-    font-size: 15px;
-    ;
-
+    font-size: 1rem;
 }
 
 .cart{
-padding-left: 300px;
-margin-right: 0px;
+padding-left: 26rem;
+margin-right: 0rem;
 }
 #product1{
-  width: 36%;
-    margin: 40px;
-    margin-left: 140px;
+  width: 36vw;
+    margin: 2.7rem;
+    margin-left: 9.3rem;
     cursor: pointer;
 }
 #side{
@@ -104,43 +105,43 @@ margin-right: 0px;
 
 #details{
     float: right;
-    margin-right: 10px;
-    padding-top: 100px;
+    margin-right: 0.7rem;
+    padding-top: 7rem;
    position:absolute;
-  left: 740px;
-  bottom: 50px;
+  left: 47rem;
+  bottom: 3.5rem;
 }
 
  .sneaker{
     color: orangered;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 .title{
-    font-size: 33px;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 .text{
-    font-size: 19px;
+    font-size: 1.3em;
     color: rgb(159, 156, 156);
 }
 .img1, .img2, .img3, .img4{
-   width: 9%;
+   width: 8vw;
    height: fit-content;
  position: relative;
-bottom: 35px;
-border-radius: 5px;
+bottom: 2.3rem;
+border-radius: 0.4rem;
 cursor: pointer;
-margin-left: 10px;
+margin-left: 0.7rem;
 }
 #group{
-    margin-left: 140px;
+    margin-left: 9rem;
 
 }
 .same{
     display: flex;
 }
 .price{
-    font-size: 25px;
+    font-size: 1.5rem;
 
 }
 .nc, .pc{
@@ -148,28 +149,39 @@ margin-left: 10px;
 }
 
 .discount{
-    font-size: 17px;
+    font-size: 1.1rem;
     color: orangered;
     width: fit-content;
     height: fit-content;
     background-color: rgb(241, 218, 174);
     padding: 2px;
     position: relative;
-    bottom: 16px;
-    border-radius: 5px;
-    margin-left: 18px;
+    bottom: 1rem;
+    border-radius: 0.4rem;
+    margin-left: 1.2rem;
 
 }
 .actual{
     color: rgb(170, 163, 163);
     text-decoration: line-through;
-    font-size: 21px;
+    font-size: 1.3rem;
   position: relative;
-  bottom: 45px;
+  bottom: 1.7rem;
+  left: 3rem;
 }
 #flex-container{
     display: flex;
     align-items: center;
+}
+.reds{
+    width: 1.1rem;
+    height: 1.1rem;
+  display: none;
+    background-color: orangered;
+     border-radius: 50%;
+     position: absolute;
+    left:285px; 
+    z-index: 100; 
 }
 
 #cartinfo{
@@ -178,10 +190,10 @@ margin-left: 10px;
     position: relative;
     background-color: whitesmoke;
     float: right;
-    right: 220px;
+    right: 14rem;
     margin: auto;
     z-index: 1000;
-    bottom: 25px; 
+    bottom: 1.6rem; 
     overflow: hidden;
 }
 #info{
@@ -189,21 +201,21 @@ margin-left: 10px;
 }
 .cartel{
     font-size: 25px;
-    font-family: 600px;
-     padding-bottom: 10px;
-     margin-bottom: 10px;
+    font-family: 40rem;
+     padding-bottom: 0.75rem;
+     margin-bottom: 0.75rem;
      border-bottom: 1px rgb(112, 111, 111) solid;
 }
 #del{
-  margin-right: 20px;
-  width: 20px;
+  margin-right: 1.2rem;
+  width: 1.2rem;
   position: relative;
-  top: 10px;
+  top: 0.8rem;
   height: fit-content;
 }
 #type{
-    padding-left: 20px;
-    font-size: 18px;
+    padding-left: 1.3rem;
+    font-size: 1.2rem;
 
 }
 #check{
@@ -211,33 +223,34 @@ margin-left: 10px;
     display: flex;
     flex-direction: row;
     color: white;
-    width: 80%;
+    width: 80vw;
     height: fit-content;
-    padding: 10px;
+    padding: 0.7rem;
     background-color: orangered;
     border-radius: 5px;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
 }
 .out{
   padding-left: 70px;
 }
 #thumbimg{
-    width: 50px;
+    width: 3.1rem;
     height: fit-content;
-    margin-left: 10px;
+    margin-left: 0.75rem;
 }
 #closebtn{
     width: 1%;
     height: fit-content;
     position: relative;
-    left: 100px;
-    top:40px;
+    left: 6.3rem;
+    top:2.7rem;
     /* bottom: 100px; */
    color: white;
 }
 .cartname{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 100;
    color: grey;
   border-bottom: grey 1px solid;
@@ -245,84 +258,84 @@ margin-left: 10px;
 .tocart{
     background-color: orangered;
     color: white;
-    padding: 12px;
-    border-radius: 5px;
+    padding: 0.75rem;
+    border-radius: 0.4rem;
     flex: 0.4;
 }
 .action{
     background-color: rgb(242, 234, 234);
-    padding: 12px;
+    padding: 0.7rem;
     align-items: center;
     border-radius: 5px;
     flex: 0.25;
    
 }
 .plus{
-    margin-left: 20px;
+    margin-left: 1.2rem;
 }
 .minus{
-    margin-right: 20px;
+    margin-right: 1.2rem;
     position: relative;
     bottom: 5px
 }
 .zero{
-    font-size: 17px;
+    font-size: 1.1rem;
 }
 .basket{
-   padding-left: 30px;
+   padding-left: 2rem;
     align-items: center;
 }
 .block:hover{
     border: 3px solid orangered;
-    border-radius: 10px;
+    border-radius: 0.6rem;
 
 }
 #icons{
     display: block;
     position: relative;
-    top: 340px;
-    left: 500px;
+    top: 21rem;
+    left: 31rem;
     z-index: 1000;
     display: none;
 }
 .next{
     position: relative;
-    left: 60px;
+    left: 3.9rem;
     display: block;
 }
 .previous{
    position: relative;
-   right: 330px;
+   right: 21rem;
    display: block;
 }
 #circles{
-    width: 40px;
-    height: 40px;
+    width: 2.8rem;
+    height: 2.8rem;
     background-color: yellow;
-    border-radius:50% ;
+    border-radius:50vw ;
     position: relative;
-    top: 310px;
-    left: 560px;
+    top: 21rem;
+    left: 35rem;
     z-index: 800;
     display: none;
 }
 #empty{
-    font-size: 22px;
+    font-size: 1.5rem;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 3.2rem;
     display: none;
     position: absolute;
-    bottom: 70px;
-    right: 50px;
+    bottom: 4.5rem;
+    right: 3.2rem;
 }
 #circles2{
-    width: 40px;
-    height: 40px;
+    width: 3.2rem;
+    height: 3.2rem;
     background-color: yellow;
-    border-radius:50% ;
+    border-radius:50vw ;
     position: relative;
-    top: 270px;
-    left: 160px;
+    top: 17rem;
+    left: 10rem;
     z-index: 800;
     display: none;
 }
@@ -337,14 +350,14 @@ margin-left: 10px;
     body{
        margin: auto;
        overflow-x: hidden;
-       padding: 0px; 
+       padding:0rem; 
     }
 
 .menus{
     display: block;
     position: relative;
-    bottom: 60px;
-    left: 30px;
+    bottom: 2.8rem;
+    left: 2rem;
   
 }
 
@@ -353,30 +366,32 @@ margin-left: 10px;
 }
 #headers{
     position: relative; 
-  
+    width: 100vw;
+    height: 7vw;
+    top: 0rem;
 }
 .cart{
     position: relative;
-right: 290px;
+right: 18.3rem;
 
 }
 .avatar{
-    width: 25px;
-    height: 25px;
+    width: 1.6rem;
+    height: 1.6rem;
     position: relative;
-    right: 300px;
+    right: 18.75rem;
 }
 #side{
     display: block;
-    height: 100%;
+    height: 100vw;
     position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
     opacity: 0.9;
     overflow-x: hidden;
-    padding-top: 60px;
+    padding-top: 3.8rem;
     width: 0px;
     background-color: rgb(76, 73, 73);
     transition: 0.7s;
@@ -390,8 +405,8 @@ right: 290px;
 }
 .x{
     position: relative;
-    bottom: 40px;
-    left: 120px;
+    bottom: 2.5rem;
+    left: 7.5rem;
 }
 /* #icons{
     display: block;
@@ -408,30 +423,38 @@ right: 290px;
     display: none;
 }
 
-#product1{
+/* #product1{
     position: absolute;
-    width: 105%;
+    width: 100vw;
     height: 350%;
-  top:-83px;
-  right: -40px;
+  top:-4.7rem;
+  right: -2.5rem;
     z-index: 400;
-}
+} */
+#product1{
+    position: relative;
+    width: 95vw;
+    height:350%;
+  bottom: 10rem;
+  right: 10rem;
+    z-index: 400;
+} 
 
 
 #details{
     position: absolute;
-    top: 250px;
-     left: 10px;
+    top:15rem;
+     left: 0rem;
     z-index: 400;
 }
 .sneaker{
-    font-size: 17px;
+    font-size: 1.1rem;
 }
 .title{
-    font-size:23px ;
+    font-size:1.44rem ;
 }
 .text{
-    font-size: 15px;
+    font-size: 1rem;
 }
 #flex-container{
     position: absolute;
@@ -440,91 +463,91 @@ right: 290px;
 }
 .plus{
  position: relative;
- left: 120px;
+ left: 6rem;
 }
 .put{
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 .minus{
-    margin-right: 120px;
+    margin-right:6rem;
     position: relative;
     bottom: 5px;
-    margin-left: 30px;
+    margin-left: 2rem;
 }
 .zero{
-    font-size: 17px;
+    font-size: 1.1rem;
     align-items: center;
 }
 .basket{
-   padding-left: 110px;
+   padding-left: 7rem;
     align-items: center;
 }
 .tocart{
     position: relative;
     background-color: orangered;
     color: white;
-    padding: 12px;
+    padding: 0.75rem;
     border-radius: 5px;
     flex: 2;
-   width: 140%;
+   width: 100vw;
 }
 .action{
     background-color: rgb(242, 234, 234);
     padding: 12px;
     align-items: center;
     border-radius: 5px;
-width: 140%;
+width: 100vw;
    flex: 2;
 }
 #icons{
     display: block;
     position: relative;
-    top: 340px;
-    left: 450px;
+    top:21.3rem;
+    left: 28.2rem;
     z-index: 1000;;
 }
 .previous{
     position: relative;
  z-index: 1000;
     display: block;
-    bottom: 190px;
-    right: 380px;
+    bottom: 12.7rem;
+    right: 23.75rem;
  }
  .next{
     position: absolute;
-bottom: 190px;
-    left: -160px;
+bottom: 12.9rem;
+    left: -10.4rem;
    z-index: 1000;
 }
  #circles{
-     width: 40px;
-     height: 40px;
+     width: 2rem;
+     height: 2rem;
      background-color: white;
      border-radius:50% ;
      position: relative;
      z-index: 900;
      display: block;
-     left: 57px;
-     top: 120px;
+     left: 4rem;
+     top: 15.7vh;
  }
  #circles2{
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
     background-color: white;
     border-radius:50% ;
     position: relative;
-    top: 80px;
-    left: 275px;
+    top: 10.5vh;
+    left: 17.2rem;
     z-index: 900;
     display: block;
 }
  .actual{
     color: rgb(170, 163, 163);
     text-decoration: line-through;
-    font-size: 21px;
+    font-size: 1.3rem;
   position: relative;
-  bottom: 19px;
-  left: 150px;
+  bottom: 1.2rem;
+  left: 9rem;
 }
 #lightbox.active{
     position: absolute;
@@ -535,8 +558,8 @@ bottom: 190px;
 #lightbox{
     position: absolute;
     top: 0px;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
     background-color: rgba(0, 0, 1, 0.8);
     display: none;
 }
@@ -553,16 +576,16 @@ bottom: 190px;
     .digit{
         color: white;
         font-weight: 700;
-        font-size: 23px;
+        font-size: 1.44rem;
         position: relative;
-      top: 3px;
-        left: 5px;
+      top: 0.19rem;
+        left: 0.22rem;
     }
     .desc{
-        font-size: 15px;
+        font-size: 1rem;
     }
     .cart{
-    padding-left: 300px;
+    padding-left: 18.75rem;
     margin-right: 0px;
     }
      #cartinfo{
@@ -570,16 +593,17 @@ bottom: 190px;
         height:1.8in;
         position: absolute;
         background-color: whitesmoke;
-        right: 50px;
+        right: 3rem;
         z-index: 1000;
-       top:-0px;
+       top:1.3rem;
     } 
     #total{
         position: relative;
     }
+    
     .reds{
-        width: 17px;
-        height: 17px;
+        width: 1.1rem;
+        height: 1.1rem;
       display: none;
         background-color: orangered;
          border-radius: 50%;
@@ -588,34 +612,35 @@ bottom: 190px;
         z-index: 100; 
     }
     .digits{
-        color: rgb(246, 246, 246);
+        color: white;
         font-weight: 700;
-        font-size: 15px;
+        font-size: 1rem;
         position: relative;
-      bottom: 13px;
+      bottom: 0.8rem;
         left: 5px;
         z-index: 1000;
     }
     #thumbimg{
-        width: 30px;
-        height: 30px;
-        margin-left: 10px;
+        width: 1.88rem;
+        height: 1.88rem;
+        margin-left: 0.6rem;
     }
     #check{
-        font-size: 20px;
+        font-size: 1.2rem;
         display: block;
         flex-direction: row;
         color: white;
-        width: 80%;
+        width: 56vw;
         height: fit-content;
-        padding: 10px;
+        padding: 0.6rem;
         background-color: orangered;
         border-radius: 5px;
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 1.25rem;
+        margin-left: 1.25rem;
+        margin-right:6.25rem;
     }
     .out{
-      padding-left: 70px;
+      padding-left: 4.4rem;
     }
 }
 
