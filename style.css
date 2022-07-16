@@ -383,7 +383,7 @@ right: 18.3rem;
 }
 #side{
     display: block;
-    height: 100vw;
+    height: 100vh;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -408,14 +408,7 @@ right: 18.3rem;
     bottom: 2.5rem;
     left: 7.5rem;
 }
-/* #icons{
-    display: block;
-    position: relative;
-    top: 340px;
-    left: 500px;
-    z-index: 1000;
-  
-} */
+
 #everything{
     display: block;
 }
@@ -433,25 +426,30 @@ right: 18.3rem;
 } */
 #product1{
     position: relative;
-    width: 95vw;
-    height:350%;
-  bottom: 10rem;
+    width: 100vw;
+    height:fit-content;
+  bottom: 8.3rem;
   right: 10rem;
+  margin-bottom: 5rem;
     z-index: 400;
+    
 } 
+
 
 
 #details{
     position: absolute;
-    top:15rem;
-     left: 0rem;
+    top:0rem;
+     left: 0.5rem;
     z-index: 400;
+    margin-top: 16.3rem;
 }
 .sneaker{
     font-size: 1.1rem;
 }
 .title{
     font-size:1.44rem ;
+    position: relative;
 }
 .text{
     font-size: 1rem;
@@ -501,21 +499,21 @@ width: 100vw;
 }
 #icons{
     display: block;
-    position: relative;
-    top:21.3rem;
+    position: absolute;
+    top:22rem;
     left: 28.2rem;
     z-index: 1000;;
 }
 .previous{
-    position: relative;
+    position: absolute;
  z-index: 1000;
     display: block;
-    bottom: 12.7rem;
-    right: 23.75rem;
+    bottom: 11.5rem;
+    right: 22.75rem;
  }
  .next{
-    position: absolute;
-bottom: 12.9rem;
+    position:absolute;
+bottom: 12.7rem;
     left: -10.4rem;
    z-index: 1000;
 }
@@ -528,7 +526,7 @@ bottom: 12.9rem;
      z-index: 900;
      display: block;
      left: 4rem;
-     top: 15.7vh;
+     top: 19.5vh;
  }
  #circles2{
     width: 2rem;
@@ -536,7 +534,7 @@ bottom: 12.9rem;
     background-color: white;
     border-radius:50% ;
     position: relative;
-    top: 10.5vh;
+    top: 14vh;
     left: 17.2rem;
     z-index: 900;
     display: block;
@@ -589,13 +587,14 @@ bottom: 12.9rem;
     margin-right: 0px;
     }
      #cartinfo{
-        width: 0in;
-        height:1.8in;
+        width: 0rem;
+        height: 10rem;
         position: absolute;
         background-color: whitesmoke;
         right: 3rem;
         z-index: 1000;
-       top:1.3rem;
+       top: 0px;
+       margin-top: -2.3rem;
     } 
     #total{
         position: relative;

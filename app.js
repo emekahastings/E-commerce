@@ -273,12 +273,13 @@ if(image4.classList.contains('img4')){
  cart=true
 cartname.addEventListener('click', function(){
  if(!cart){
-  cartinfo.style.width='3in'
+  cartinfo.style.width='18rem'
+  cartinfo.style.height='10rem'
    empty.style.display='block'
   inside.style.visibility='visible'
   cart=true
  } else if(cart===true){
-  cartinfo.style.width='0in'
+  cartinfo.style.width='0rem'
   empty.style.display='none'
   inside.style.visibility='hidden'
   cart=false
